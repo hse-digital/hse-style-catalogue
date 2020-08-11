@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HSE style catalogue - Pagination</title>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel="stylesheet" href="../../assets/stylesheets/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/styles/default.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../../assets/stylesheets/app.css">
+  <link rel="stylesheet" href="_pagination.css">
+
+  <script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/highlight.min.js"></script>
+</head>
+
+<body>
+  <div class="app-width-container">
+    <main id="main-content" class="app-content" role="main">
+
+      <a class="app-link app-link-back" href="javascript:history.back()">Back</a>
+
+      <h1 class="app-heading app-heading-xl">
+        <span class="app-caption app-caption-xl">Components</span> Pagination
+      </h1>
+
+      <h2 class="app-heading app-heading-m">Previous and next pagination</h2>
+      <div class="app-pagination-examples__image">
+        <img src="../../assets/images/pagination/hse-guidance-pagination-2.png" alt="'Previous' and 'next' found on guidance pages. Screenshot."
+          width="570" />
+      </div>
+      <dl class="app-body app-pagination-list">
+        <div class="app-pagination-list__row">
+          <dt class="app-pagination-list__column app-pagination-list__name">
+            <div class="app-pagination-examples">
+              <div class="app-pagination-examples__image">
+                <img src="../../assets/images/pagination/hse-guidance-pagination-1.png"
+                  alt="'Next' pagination link. Screenshot." width="239" />
+              </div>
+            </div>
+          </dt>
+          <dd class="app-pagination-list__column app-pagination-list__code">
+            <p class="app-heading-s">Current markup</p>
+            <pre class="app-!-margin-bottom-1"><code class="html">&lt;div class="next-page"&gt;
+  &lt;a href="#" id="nextPage" rel="next"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;span class="pagination-icon"&gt;
+          Next &lt;span class="hide"&gt;page&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class="pagination-text"&gt;
+          More detail on managing risk
+        &lt;/span&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/a&gt;&lt;sup class="hideFromScreen"&gt;[13]&lt;/sup&gt;
+&lt;/div&gt;</code></pre>
+          </dd>
+        </div>
+        <div class="app-pagination-list__row">
+          <dt class="app-pagination-list__column app-pagination-list__name">
+            <div class="app-pagination-examples">
+              <div class="app-pagination-examples__image">
+                <img src="../../assets/images/pagination/hse-guidance-pagination-last.png"
+                  alt="'Previous' pagination link. Screenshot." width="246" />
+              </div>
+            </div>
+          </dt>
+          <dd class="app-pagination-list__column app-pagination-list__code">
+            <p class="app-heading-s">Current markup</p>
+            <pre class="app-!-margin-bottom-1"><code class="html">&lt;div class="previous-page"&gt;
+  &lt;a href="#" id="previousPage" rel="previous"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;span class="pagination-icon"&gt;
+          Previous &lt;span class="hide"&gt;page&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class="pagination-text"&gt;
+          Steps needed to manage risk
+        &lt;/span&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/a&gt;&lt;sup class="hideFromScreen"&gt;[12]&lt;/sup&gt;
+&lt;/div&gt;</code></pre>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="app-heading app-heading-m">Previous and next pagination</h2>
+      <dl class="app-body app-pagination-list">
+        <div class="app-pagination-list__row">
+          <dt class="app-pagination-list__column app-pagination-list__name">
+            <div class="app-pagination-examples">
+              <div class="app-pagination-examples__image">
+                <img src="../../assets/images/pagination/hse-press-pagination-1.png"
+                  alt="Numbers one to five between 'next' and 'previous' arrows, with the 'previous' arrow and number one selected. Screenshot."
+                  width="303" />
+              </div>
+              <div class="app-pagination-examples__image">
+                <img src="../../assets/images/pagination/hse-press-pagination-2.png"
+                  alt="Numbers one to five between 'next' and 'previous' arrows, with the number three selected. Screenshot."
+                  width="298" />
+              </div>
+              <div class="app-pagination-examples__image">
+                <img src="../../assets/images/pagination/hse-press-pagination-last.png"
+                  alt="Numbers seven to eleven between 'next' and 'previous' arrows, with the 'next' arrow and number eleven selected. Screenshot."
+                  width="313" />
+              </div>
+            </div>
+          </dt>
+          <dd class="app-pagination-list__column app-pagination-list__code">
+            <p class="app-heading-s">Current markup</p>
+            <pre class="app-!-margin-bottom-1"><code class="html">&lt;div class=" pt-cv-pagination-wrapper"&gt;
+  &lt;ul class="pt-cv-pagination pt-cv-ajax pagination" data-totalpages="11" data-currentpage="1" data-sid="#" data-unid=""&gt;
+    &lt;li class="cv-pageitem-first active"&gt;
+      &lt;a title="Go to first page"&gt;«&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="cv-pageitem-prev active"&gt;
+      &lt;a title="Go to previous page"&gt;‹&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="cv-pageitem-number active"&gt;
+      &lt;a title="Current page is 1"&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="cv-pageitem-number"&gt;
+      &lt;a title="Go to page 2"&gt;2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="cv-pageitem-number"&gt;
+      &lt;a title="Go to page 3"&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="cv-pageitem-number"&gt;
+      &lt;a title="Go to page 4"&gt;4&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="cv-pageitem-number"&gt;
+      &lt;a title="Go to page 5"&gt;5&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="cv-pageitem-next"&gt;
+      &lt;a title="Go to next page"&gt;›&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="cv-pageitem-last"&gt;
+      &lt;a title="Go to last page"&gt;»&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;img class="pt-cv-spinner" alt="Loading..." src="data:image/gif" width="15" height="15"&gt;
+  &lt;div class="clear pt-cv-clear-pagination"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </dd>
+        </div>
+      </dl>
+
+    </main>
+
+  </div>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

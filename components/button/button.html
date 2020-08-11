@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HSE style catalogue - Buttons</title>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel="stylesheet" href="../../assets/stylesheets/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/styles/default.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../assets/stylesheets/app.css">
+  <link rel="stylesheet" href="_button.css">
+
+  <script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1/build/highlight.min.js"></script>
+</head>
+
+<body>
+  <div class="app-width-container">
+    <main id="main-content" class="app-content" role="main">
+
+      <a class="app-link app-link-back" href="javascript:history.back()">Back</a>
+
+      <h1 class="app-heading app-heading-xl">
+        <span class="app-caption app-caption-xl">Components</span>
+        Buttons
+      </h1>
+
+      <table class="app-body app-button-list">
+        <tbody>
+
+          <tr class="app-button-list-row">
+            <td colspan="3">
+              <h2 class="app-heading app-heading-m">Site</h2>
+            </td>
+          </tr>
+
+          <!-- subscribe to HSE newsletters - takes the user to GOV delivery service -->
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-subscribe-button.png" alt="'Subscribe' news bulletin button. Screenshot." width="295" />
+              </div>
+              <div class="app-button-examples">
+                <span class="app-button-tag">Interactive:</span>
+                <button class="app-button hse-bulletin-button" type="button" name="button">Subscribe</button>
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code">
+              <p class="app-heading-s">Current markup</p>
+              <pre class="app-!-margin-bottom-1"><code class="html">&lt;input class="eBulletinButton" name="commit" type="submit" value="Subscribe"&gt;</code></pre>
+            </td>
+            <td class="app-button-list-column app-button-list-column__notes">
+              built as an <code class="app-code">input</code> and is styled using classname <code class="app-code">.eBulletinButton</code><br>
+              it has no hover, but does use the standard input focus (yellow outline)<br>
+              this takes the user to the GOV delivery service - acting like a link
+            </td>
+          </tr>
+
+          <!-- cookies banner 'accept' button -->
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-cookies-button.png" alt="'Hide message' cookies button. Screenshot." width="111" />
+              </div>
+              <div class="app-button-examples">
+                <span class="app-button-tag">Interactive:</span>
+                <button class="app-button hse-cookies-button" type="button" name="button">Hide message</button>
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code">
+              <p class="app-heading-s">Current markup</p>
+              <pre class="app-!-margin-bottom-1"><code class="html">&lt;button id="acceptAllCookies"&gt;
+  Hide message
+&lt;/button&gt;</code></pre>
+            </td>
+            <td class="app-button-list-column app-button-list-column__notes"></td>
+          </tr>
+
+          <tr class="app-button-list-row">
+            <td colspan="3">
+              <h2 class="app-heading app-heading-m">Services and forms</h2>
+            </td>
+          </tr>
+
+          <!-- unknown button -->
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Interactive:</span>
+                <button class="app-button hse-form-button" type="button" name="button">Send</button>
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code">
+              <p class="app-heading-s">Current markup</p>
+              <pre><code class="html">&lt;input class="eBulletinButton" name="commit" type="submit" value="Subscribe"&gt;</code></pre>
+            </td>
+            <td class="app-button-list-column app-button-list-column__notes"></td>
+          </tr>
+
+          <!-- notifications subdomain services -->
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-notifications-button.png" alt="'Next' form button. Screenshot." width="70" />
+              </div>
+              <div class="app-button-examples">
+                <span class="app-button-tag">Interactive:</span>
+                <button class="app-button hse-notifications-button" type="button" name="button">Next ></button>
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code">
+              <p class="app-heading-s">Current markup</p>
+              <pre><code class="html">&lt;input type="submit" name="ctl00$MainContent$btnNotiferNext" value="Next >" id="MainContent_btnNotiferNext" title="Ctrl-Shift-n" class="btn btn-sm btn-primary"&gt;</code></pre>
+            </td>
+            <td class="app-button-list-column app-button-list-column__notes">
+              built as an <code class="app-code">input</code> and is styled using classname<br>
+              completely deviates from other components across the site, this is true of all the notifications subdomain
+            </td>
+          </tr>
+
+          <!-- webcommunities subdomain services -->
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-webcommunities-button.png" alt="'Next' form button. Screenshot." width="75" />
+              </div>
+              <div class="app-button-examples">
+                <span class="app-button-tag">Interactive:</span>
+                <button class="app-button hse-webcommunities-button" type="button" name="button">Next >></button>
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code">
+              <p class="app-heading-s">Current markup</p>
+              <pre><code class="html">&lt;input class="button hse-webcommunities-button" name="addAnswers" type="submit" value="Next >>"&gt;</code></pre>
+            </td>
+            <td class="app-button-list-column app-button-list-column__notes">
+              built as an <code class="app-code">input</code> and is styled using classname<br>
+              completely deviates from other components across the site, this is true of all the notifications subdomain
+            </td>
+          </tr>
+
+          <!-- services subdomain services -->
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-services-button-apply-now.png" alt="'Apply now' form button. Screenshot." width="238" />
+              </div>
+              <div class="app-button-examples">
+                <span class="app-button-tag">Interactive:</span>
+                <button class="app-button hse-services-button" type="button" name="button">Apply now</button>
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code">
+              <p class="app-heading-s">Current markup</p>
+              <pre><code class="html">&lt;a class="btn btn-primary apply-btn" href="#"&gt;Apply now&lt;/a&gt;</code></pre>
+            </td>
+            <td class="app-button-list-column app-button-list-column__notes"></td>
+          </tr>
+
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-services-button-sign-in.png" alt="'Sign in' button. Screenshot." width="198" />
+              </div>
+              <div class="app-button-examples">
+                <span class="app-button-tag">Interactive:</span>
+                <button class="app-button hse-services-button" type="button" name="button">Sign in</button>
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code">
+              <p class="app-heading-s">Current markup</p>
+              <pre><code class="html">&lt;a class="btn btn-primary signin-btn" href="#"&gt;Sign in&lt;/a&gt;</code></pre>
+            </td>
+            <td class="app-button-list-column app-button-list-column__notes"></td>
+          </tr>
+
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-services-sign-in-forgot-password.png" alt="'Sign in' next to 'forgot your password?' button. Screenshot." width="292" />
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code"></td>
+            <td class="app-button-list-column app-button-list-column__notes"></td>
+          </tr>
+
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-careers-apply-now.png" alt="'Apply now' button. Screenshot." width="156" />
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code"></td>
+            <td class="app-button-list-column app-button-list-column__notes"></td>
+          </tr>
+
+          <tr class="app-button-list-row">
+            <th class="app-button-list-column app-button-list-column__name" >
+              <div class="app-button-examples">
+                <span class="app-button-tag">Screenshot:</span>
+                <img src="../../assets/images/buttons/hse-box-button-links.png" alt="'Complain about HSE' button. Screenshot." width="211" />
+              </div>
+            </th>
+            <td class="app-button-list-column app-button-list-column__code"></td>
+            <td class="app-button-list-column app-button-list-column__notes"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </main>
+
+  </div>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

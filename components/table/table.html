@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HSE style catalogue - Tables</title>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel="stylesheet" href="../../assets/stylesheets/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/styles/default.min.css">
+
+  <link rel="stylesheet" href="../../assets/stylesheets/app.css">
+  <link rel="stylesheet" href="_table.css">
+
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/highlight.min.js"></script>
+</head>
+
+<body>
+  <div class="app-width-container">
+    <main id="main-content" class="app-content" role="main">
+
+      <a class="app-link app-link-back" href="javascript:history.back()">Back</a>
+
+      <h1 class="app-heading app-heading-xl">
+        <span class="app-caption app-caption-xl">Components</span>
+        Tables
+      </h1>
+
+      <h2 class="app-heading app-heading-s">Table</h2>
+      <div class="app-search-examples">
+        <img src="../../assets/images/table/hse-table-unsortable.png" alt="Table with three columns. Screenshot."
+          width="622" />
+      </div>
+      <p class="app-body">
+        This can be found on the <a class="app-link" href="https://www.hse.gov.uk/consultant/find-a-consultant.htm"
+          target="_blank">HSE guidance pages</a>
+      </p>
+      <div class="app-code">
+        <pre><code>
+<table>
+  <tbody>
+    <tr>
+      <th>Organisation and website link</th>
+      <th>Description</th>
+      <th>Specialist topic/industry</th>
+    </tr>
+    <tr class="even">
+      <td>
+        <a href="#">The Association of Noise Consultants (ANC)</a>
+        <sup class="hideFromScreen">[4]</sup>
+      </td>
+      <td>Trade association for acoustic, noise and vibration consultancy practices in the UK.</td>
+      <td>Noise/vibration</td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <a href="#">British Occupational Hygiene Society (BOHS)</a>
+        <sup class="hideFromScreen">[5]</sup>
+      </td>
+      <td>Provides information, expertise and guidance in the recognition, control and management of workplace health risks.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr class="even">
+      <td>
+        <a href="#">The British Psychological Society</a>
+        <sup class="hideFromScreen">[6]</sup>
+      </td>
+      <td>Representative body for psychology and psychologists in the UK.</td>
+      <td>Psychology</td>
+    </tr>
+  </tbody>
+</table>
+        </code></pre>
+      </div>
+
+      <h2 class="app-heading app-heading-s">Table sortable</h2>
+      <div class="app-search-examples">
+        <img src="../../assets/images/table/hse-table.png"
+          alt="Table with four columns that have up and down sorting arrows. Screenshot." width="709" />
+      </div>
+      <p class="app-body">
+        This can be found on the <a class="app-link" href="https://www.hse.gov.uk/legislation/acts.htm"
+          target="_blank">about HSE pages</a>
+      </p>
+      <div class="app-code">
+        <pre><code>
+<table class="tablesortable tablesorter tablesorter-false" role="grid">
+  <thead>
+    <tr class="tablesorter-headerRow" role="row">
+      <th axis="sortable" style="cursor: pointer; user-select: none;" data-column="0" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Statute: No sort applied, activate to apply an ascending sort">
+        <div class="sortDirArrow sortNone"></div>
+        <div class="tablesorter-header-inner">Statute</div>
+      </th>
+      <th axis="sortable" style="cursor: pointer; user-select: none;" data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Year: No sort applied, activate to apply an ascending sort">
+        <div class="sortDirArrow sortNone"></div>
+        <div class="tablesorter-header-inner">Year</div>
+      </th>
+      <th axis="sortable" style="cursor: pointer; user-select: none;" data-column="2" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Subject: No sort applied, activate to apply an ascending sort">
+        <div class="sortDirArrow sortNone"></div>
+        <div class="tablesorter-header-inner">Subject</div>
+      </th>
+      <th axis="sortable" style="cursor: pointer; user-select: none;" data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Guidance : No sort applied, activate to apply an ascending sort">
+        <div class="sortDirArrow sortNone"></div>
+        <div class="tablesorter-header-inner">Guidance </div>
+      </th>
+    </tr>
+  </thead>
+  <tbody aria-live="polite" aria-relevant="all">
+    <tr class="even">
+      <td>
+        <a href="#">Agriculture (Safety, Health and Welfare Provisions) Act 1956 (c. 49)</a><sup class="hideFromScreen">[3]</sup></td>
+      <td>1956 </td>
+      <td>
+        <a href="../agriculture/index.htm">Agriculture </a>
+        <sup class="hideFromScreen">[4]</sup>
+      </td>
+      <td>No specific guidance available</td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <a href="#">Employment Medical Advisory Service Act 1972 (c. 28)</a>
+        <sup class="hideFromScreen">[5]</sup>
+      </td>
+      <td>1972</td>
+      <td>
+        <a href="#">Health services </a>
+        <sup class="hideFromScreen">[6]</sup>
+      </td>
+      <td>No specific guidance available</td>
+    </tr>
+    <tr class="even">
+      <td>
+        <a href="#">Employment of Women, Young Persons, and Children Act 1920 (c. 65)</a>
+        <sup class="hideFromScreen">[7]</sup>
+      </td>
+      <td>1920 </td>
+      <td>
+        <a href="#">Workers </a>
+        <sup class="hideFromScreen">[8]</sup>
+      </td>
+      <td>No specific guidance available</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+
+/* v4.2.7 */
+/* Warning: The tablesorter plugin does not like being minified by Google Closure, so this file uses the preminified version, and caution should be used if minifying this file.  */
+
+function hse_sortable_tables_init() {
+  var b = $("table.tablesortable, table.sortable"); if (b.length) {
+    var a = function () { $("div.sortDirArrow").remove(); 
+    $("th.tablesorter-headerAsc").prepend('<div class="sortDirArrow sortUp"></div>'); 
+    $("th.tablesorter-headerDesc").prepend('<div class="sortDirArrow sortDown"></div>'); 
+    $("th.tablesorter-header:not(.tablesorter-headerAsc):not(.tablesorter-headerDesc)").prepend('<div class="sortDirArrow sortNone"></div>') 
+  }; 
+  b.find("th").css("cursor", "pointer"); 
+  b.tablesorter().bind("sortEnd",
+    $("body").data("settings").striped_tables.ready).bind("sortEnd", a); 
+    $.browser.msie && 8 >= $.browser.majorVersion && $("th.header").each(function () { 
+      var a = $(this); a.width(a.width() + 18) 
+    }); 
+    a()
+  }
+}
+
+function hse_expandable_tables_init() {
+  $("table:has(tbody):not(.noProgressiveEnhancement):not(.noExpanding)").filter(function () { return 1 < $(this).find("tbody").length }).each(function () {
+    $(this).find("tbody").each(function (b) {
+      var a = $(this); b = function (b) { 
+        if (void 0 == b.keyCode || 0 == b.keyCode || 13 == b.keyCode) $(this).toggleClass("tableRowToggleClosed"), $(this).hasClass("tableRowToggleClosed") ? a.find("tr:gt(0)").hide() : a.find("tr:gt(0)").show(), b.preventDefault() 
+      }; 
+      1 < a.find("tr:not(.noProgressiveEnhancement):not(.noExpanding)").length && !a.hasClass(".noProgressiveEnhancement") && !a.hasClass(".noExpanding") && a.find("tr:first").find("td, th").eq(0).append($(' <a class="tableRowToggle" tabindex="0">Open/close</a> ').bind("click keypress", b).trigger("click"))
+    })
+  })
+} 
+
+function hse_striped_tables() { 
+  var b = 0; 
+  $("table:not(.noStripes) tr").each(function () { 
+    var a = $(this); 
+    0 < a.find("td").length && (a.removeClass("odd even").addClass(b % 2 ? "odd" : "even"), b++) 
+  }) 
+};
+
+// --------------------------------------
+/*!
+* TableSorter 2.15.5 min - Client-side table sorting with ease!
+* Copyright (c) 2007 Christian Bach
+* Source: https://github.com/Mottie/tablesorter
+*/
+
+</script>
+        </code></pre>
+      </div>
+
+      <h2 class="app-heading app-heading-s">Alerts table</h2>
+      <div class="app-search-examples">
+        <img src="../../assets/images/table/hse-table-alert.png"
+          alt="Table with title row and two columns underneath. Screenshot." width="579" />
+      </div>
+      <p class="app-body">
+        This can be found on the <a class="app-link" href="https://www.hse.gov.uk/legislation/acts.htm"
+          target="_blank">about HSE pages</a>
+      </p>
+
+    </main>
+
+  </div>
+  <script>
+    document.querySelectorAll("code").forEach(function (element) {
+      element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    });
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>

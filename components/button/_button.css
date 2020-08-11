@@ -1,0 +1,139 @@
+/* HSE form button */
+.hse-form-button {
+  background-color: #d1d1d1;
+  background: -moz-linear-gradient(top, #ebebeb, #d1d1d1);
+  background: -webkit-linear-gradient(linear, left top, left bottom, from(#ebebeb), to(#d1d1d1));
+  border: #999 1px solid;
+  border-radius: .5em;
+  color: #545454;
+  cursor: pointer;
+  outline: 0;
+  padding: .4em;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, );
+  width: auto;
+}
+
+.hse-form-button:hover,
+.hse-form-button:focus {
+  -moz-box-shadow: 0 1px 3px rgba(194, 194, 194, 0.3), inset 0 0 2px rgba(92, 92, 92, );
+  -webkit-box-shadow: 0 1px 3px rgba(194, 194, 194, 0.3), inset 0 0 2px rgba(92, 92, 92, );
+  box-shadow: 0 1px 3px rgba(194, 194, 194, 0.3), inset 0 0 2px rgba(92, 92, 92, )
+}
+
+/* Bulletin button */
+.hse-bulletin-button {
+  background: #981e32;
+  color: #fff;
+  padding: 5px;
+  margin-top: 10px;
+  border: 0;
+}
+
+/* Accept cookies button */
+.hse-cookies-button {
+  background: #981e32;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hse-cookies-button:hover,
+.hse-cookies-button:focus {
+  -moz-box-shadow: 0 1px 3px rgba(194, 194, 194, 0.3), inset 0 0 2px rgba(92, 92, 92, );
+  -webkit-box-shadow: 0 1px 3px rgba(194, 194, 194, 0.3), inset 0 0 2px rgba(92, 92, 92, );
+  box-shadow: 0 1px 3px rgba(194, 194, 194, 0.3), inset 0 0 2px rgba(92, 92, 92, )
+}
+
+/* Notifications button */
+.hse-notifications-button {
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.hse-notifications-button:hover,
+.hse-notifications-button:focus,
+.hse-notifications-button:active {
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.hse-notifications-button:focus {
+  border-color: #122b40;
+}
+
+/* Webcommunities button */
+.hse-webcommunities-button {
+  cursor: default;
+  background-color: #efefef;
+  border-color: #767676;
+  border-radius: 2px;
+  border-style: outset;
+  border-width: 1px;
+  box-sizing: border-box;
+  font: 400 13.3333px Arial;
+  padding: 4px 6px;
+}
+
+.hse-webcommunities-button:hover {
+  background-color: #e1e1e1;
+}
+
+.hse-webcommunities-button:focus {
+  outline-color: rgb(0, 95, 204);
+  outline-offset: 0;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+/* Services button */
+.hse-services-button {
+  background: #0971b2 url("../../assets/images/btn-arrow-next.png") no-repeat 95% 50%;
+  border: 2px solid #0971b2;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.42857;
+  margin: 20px 0;
+  padding: 8px 55px 8px 25px;
+  text-align: left;
+  text-decoration: none;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.hse-services-button:hover,
+.hse-services-button:active {
+  background-color: #FFF;
+  border-color: #0971b2;
+  color: #0971b2;
+  background-image: url("../img/btn-arrow-next-blue.png");
+}

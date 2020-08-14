@@ -2,4 +2,4 @@
 # HSE style catalogue
 This site is a collection of the different styles and components found across the HSE webspace, and should only be considered as a starting point to get buy in for a design system with pattern library
 
-We use Azure Boards to keep project work tracable.
+We use Azure Boards to keep project work tracable. This will help us maintain a consistent audit trail of ork carried out in relation to work needed.
